@@ -1,6 +1,6 @@
 class ProfilesController < ApplicationController
   def index
-    @username = params[:username]
+    @user = Repo.new(params[:username])
   end
 
   def respositories

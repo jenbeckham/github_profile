@@ -9,10 +9,10 @@ end
 
 class RepoTest < ActiveSupport::TestCase
   test "repository name" do
-    assert_equal 11, Repo.new.repository_name.count
+    assert_equal 11, Repo.new("jenbeckham").repository_name.count
   end
 
   test "picture url" do
-    assert_equal "https://avatars.githubusercontent.com/u/11805662?v=3", Repo.new.picture
+    assert_equal "https://avatars.githubusercontent.com/u/11805662?v=3", Repo.new("jenbeckham").picture
   end
 end
