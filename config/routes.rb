@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root 'profiles#index'
 
   get 'profiles/index'
-  post 'profiles/respositories'
+  get 'profiles/respositories'
   get 'profiles/activites'
 
   # The priority is based upon order of creation: first created -> highest priority.
