@@ -6,6 +6,6 @@ class ProfilesController < ApplicationController
     @user = Repo.new(params[:username])
   end
 
-  def activites
-  end
+  # def activites
+  # end
 end
