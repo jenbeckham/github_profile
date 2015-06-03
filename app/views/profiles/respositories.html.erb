@@ -11,7 +11,8 @@
         <div class="container">
           <div class="columns profilecols">
             <div class="column one-fourth vcard" itemscope itemtype="http://schema.org/Person">
-              <a href="/account" aria-label="Change your avatar" class="vcard-avatar tooltipped tooltipped-s">                  <img alt="" class="avatar" data-user="11805662" height="230" src= <%= @user.picture%> s="460" width="230"/>
+              <a href="/account" aria-label="Change your avatar" class="vcard-avatar tooltipped tooltipped-s">
+                <img alt="" class="avatar" data-user="11805662" height="230" src=<%= @user.picture%> s="460" width="230"/>
               </a>
 
               <h1 class="vcard-names">
@@ -117,9 +118,7 @@
 
                       <h3 class="repo-list-name">
                         <a>
-                          <%= @user.each do |f| %>
-                            <%= f.respository_name %>
-                          <%= end %>
+                          <%= @user.respository_name %>
                       </a>
                       </h3>
 
