@@ -274,8 +274,9 @@
 
                     <ul class="repo-list js-repo-list" data-filterable-for="your-repos-filter" data-filterable-type="substring">
                       <li class="repo-list-item public source">
+                        <% @user.each do |r| %>
                         <div class="repo-list-stats">
-                          Ruby
+                          <%= @user.language %>
                           <a class="repo-list-stat-item tooltipped tooltipped-s" href="/jenbeckham/vote_project/stargazers" aria-label="Stargazers">
                             <span class="octicon octicon-star"></span>
                             0
@@ -288,7 +289,8 @@
 
                         <h3 class="repo-list-name">
                           <a href="/jenbeckham/vote_project">
-                            vote_project</a>
+                            vote_project
+                          </a>
                         </h3>
 
                         <p class="repo-list-meta">

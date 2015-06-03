@@ -9,6 +9,10 @@ class Repo
     HTTParty.get("https://api.github.com/users/#{@username}/repos?access_token=ENV#{"GIT_HUB_TOKEN"}")
   end
 
+  def language
+    @page{"language"}
+  end
+
   def forks_count
     @page.map {|r| r["forks_count"]}
   end
